@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #696c70;
+    padding: 16px;
+}
+
+h1 {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    margin: 15px;
+    color: rgb(4, 47, 97);
+}
+
+#card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#card img {
+    width: 50%;
+    border-radius: 8px;
+    margin: 10px;
+    border: solid 1px;
+
+}
+
+#noticia {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+}
+/*  @media - regras para diferentes telas */
+
+@media (width < 500px) {
+    #card {
+        flex-direction: column;
+    }
+
+    #card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #noticia h2 {
+        color: rgb(175, 12, 12);
+        font-size: 30px;
+    }
+
+    #noticia p {
+        font-size: 30px;
+    }
+
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+}
